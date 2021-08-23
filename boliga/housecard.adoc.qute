@@ -1,0 +1,14 @@
+[cols=4*]
+|===
+{#for house in houses}
+|image:{house.imageUrl}[]
+
+*{house.price} kr* +
+*{house.address}* +
+*{house.houseSize}* m2 / {house.pricepersqm} kr/m2 +
+Jord: *{house.lotSize}* m2 +
+Energy:  *{house.energy}* +
+Year: *{house.yearBuilt.}* +
+Time: *{house.timeOnMarket.trim()}*
+{/for}
+|===
